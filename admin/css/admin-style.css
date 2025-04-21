@@ -1,0 +1,108 @@
+/* Main layout */
+.alg-admin-wrap {
+    display: flex;
+    gap: 24px; /* Reduce the gap between columns */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    align-items: flex-start;
+}
+
+.alg-main-column, .alg-sidebar {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+/* Card styling */
+.card {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    padding: 24px 24px 16px 24px;
+    margin-bottom: 16px; /* Reduce space between cards */
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+
+.alg-sidebar .card:last-child {
+    margin-bottom: 0;
+}
+
+.alg-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Form elements */
+.form-table {
+    margin-top: 0;
+}
+
+.form-table th {
+    width: 200px;
+    padding: 15px 10px;
+}
+
+.form-table td {
+    padding: 15px 10px;
+}
+
+.form-table input[type="text"],
+.form-table input[type="url"],
+.form-table input[type="password"],
+.form-table select,
+.form-table textarea {
+    width: 100%;
+    max-width: 25em;
+}
+
+.form-table textarea {
+    min-height: 100px;
+}
+
+/* Button styling */
+.alg-submit-button {
+    margin-top: 15px !important;
+}
+
+/* Description text */
+.description {
+    color: #666;
+    font-style: italic;
+    margin: 4px 0 0;
+}
+
+/* Required fields */
+.required-field:after {
+    content: '*';
+    color: #dc3232;
+    margin-left: 4px;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 960px) {
+    .alg-admin-wrap {
+        flex-direction: column;
+    }
+    
+    .alg-main-column,
+    .alg-sidebar {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .alg-admin-wrap {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .alg-main-column, .alg-sidebar {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+/* Optional: Reduce padding on the .wrap container */
+.wrap {
+    padding: 0 !important;
+}

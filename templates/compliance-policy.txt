@@ -1,0 +1,11 @@
+Generate a comprehensive compliance policy for [business_name] that includes:
+
+1. Regulatory framework and compliance commitment
+2. Data protection and privacy compliance
+3. Information security standards
+4. Anti-fraud and anti-money laundering measures
+5. Employee compliance responsibilities
+6. Reporting violations
+7. Compliance training and education
+8. Policy updates and reviews
+9. Contact information for compliance matters
